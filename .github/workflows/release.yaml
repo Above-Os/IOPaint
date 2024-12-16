@@ -38,7 +38,7 @@ jobs:
                 context: .
                 file: ./docker/CPUDockerfile
                 push: true
-                tags: beclab/ioPaint-cpu:${{env.TAG}}
+                tags: beclab/iopaint-cpu:${{env.TAG}}
                 platforms: linux/amd64
     release_GPU:
         runs-on: linux-ubuntu22.04
@@ -67,5 +67,5 @@ jobs:
                 context: .
                 file: ./docker/GPUDockerfile
                 push: true
-                tags: beclab/ioPaint-gpu:${{env.TAG}}
+                tags: beclab/iopaint-gpu:${{env.TAG}}
                 platforms: linux/amd64
